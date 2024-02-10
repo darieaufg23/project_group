@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style>
+    body {
+        background-image: url('templates/fone_for_index.jpg');
+
+        }
+
+    h1 {
+        text-align: center;
+    }
+    .headerbuttons-container {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .headerbutton {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .headerbutton:hover {
+            background-color: #555;
+        }
+</style>
+</head>
+    <body>
+        <h1>Hello!</h1>
+        <div class="headerbuttons-container">
+            <a class="headerbutton" href="{{ url_for('index') }}">Home</a>
+            <a class="headerbutton" href="register">Registration</a>
+            <a class="headerbutton" href="login">Sign up</a>
+            <a class="headerbutton" href="dashboard">Data</a>
+        </div>
+    </body> 
+</html>
